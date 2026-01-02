@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'splash.dart';
 import 'quizHome.dart';
 import 'allergies.dart';
 import 'mood.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
     final GoRouter router = GoRouter(
       routes: [
         GoRoute(path: '/', builder: (context, state) => const QuizHome()),
+        GoRoute(path: '/splash', builder: (context, state) => const SplashScreen()),
         GoRoute(
           path: '/allergies',
           builder: (context, state) {
@@ -72,11 +74,12 @@ class MyApp extends StatelessWidget {
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.deepOrange,
             padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 20),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(30),
+            ),
           ),
         ),
       ),
     );
   }
 }
-
