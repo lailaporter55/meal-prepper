@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'quiz_data.dart';
 
+//user selects their mood for the day w tapable cards
+//multi selection
+//moves to time page
+
 class Mood extends StatefulWidget {
   final DinnerQuizData quizData;
 

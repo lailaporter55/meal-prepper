@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'quiz_data.dart';
 
+//user selects weather conditions
+//tapable cards allow multi selection
+//moves to mood page 
+
 class Weather extends StatefulWidget {
   final DinnerQuizData quizData;
 

@@ -3,6 +3,8 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'quiz_data.dart';
 
+//uses user data to suggest a meal from the api 
+
 class MealData {
   final String name;
   final String category;

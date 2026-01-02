@@ -2,16 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'quiz_data.dart';
 
+//starting page of the quiz
+//navigates to allergies page
+
 class QuizHome extends StatelessWidget {
   const QuizHome({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final quizData = DinnerQuizData(); // start empty quiz
+    final quizData = DinnerQuizData(); //start empty quiz
 
     return Scaffold(
       body: SafeArea(
         child: Container(
+          //clean gradient background
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [Colors.orange.shade50, Colors.orange.shade100],
@@ -23,6 +27,7 @@ class QuizHome extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              //title
               Text(
                 "Welcome to Dinner Quiz!",
                 style: Theme.of(context)
@@ -38,6 +43,7 @@ class QuizHome extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 40),
+              //start quiz button
               ElevatedButton.icon(
                 icon: const Icon(Icons.arrow_forward),
                 label: const Text("Start Quiz"),

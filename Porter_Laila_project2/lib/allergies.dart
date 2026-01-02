@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'quiz_data.dart';
 
+//user selects what they are allergic to and what cannot be in the recipe 
+//tapable cards allow multiple selections
+//stored in quiz data and navigates to time page
+
 class Allergies extends StatefulWidget {
   final DinnerQuizData quizData;
 
@@ -58,6 +62,7 @@ class _AllergiesState extends State<Allergies> {
             ),
             const SizedBox(height: 20),
             Expanded(
+              //cards for allergies
               child: ListView(
                 children: allergies.map((a) {
                   final isSelected = selectedAllergies.contains(a);
