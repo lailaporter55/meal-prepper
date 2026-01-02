@@ -94,7 +94,7 @@ class _AllergiesState extends State<Allergies> {
                         border: Border.all(
                           color: isSelected
                               ? Colors.deepOrange
-                              : Colors.deepOrange.shade200,
+                              : const Color(0xFFFFAB91),
                           width: 1,
                         ),
                       ),
